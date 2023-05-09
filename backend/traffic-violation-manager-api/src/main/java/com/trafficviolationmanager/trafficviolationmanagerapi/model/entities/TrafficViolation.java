@@ -20,16 +20,12 @@ public class TrafficViolation {
 
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-
     private LocalDateTime moment;
-
-
-    private Double velocity;
+    private Integer velocity;
 
     private String licensePlate;
 
-    @Enumerated(EnumType.STRING)
-    private VehicleClass vehicleClass;
+   private String vehicleClass;
 
     public TrafficViolation(ViolationRecordData violationRecord) {
         this.moment = violationRecord.moment();

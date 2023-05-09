@@ -1,0 +1,66 @@
+package com.trafficviolationgenerator.model;
+
+import com.fasterxml.jackson.annotation.JsonFormat;
+import com.trafficviolationgenerator.services.ViolationDataGeneratorService;
+
+import java.time.LocalDateTime;
+import java.time.format.DateTimeFormatter;
+
+
+public class TrafficViolation {
+
+    private static DateTimeFormatter DTF = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
+
+    private ViolationDataGeneratorService service;
+
+    @JsonFormat(pattern = "dd/MM/yyyy hh:mm:ss a")
+    private LocalDateTime moment;
+    private Integer velocity;
+    private String licensePlate;
+    private String vehicleClass;
+
+
+    public TrafficViolation(ViolationDataGeneratorService service){
+        this.moment = ViolationDataGeneratorService.moment();
+        this.licensePlate = ViolationDataGeneratorService.licensePlate();
+        this.velocity = ViolationDataGeneratorService.velocity();
+        this.vehicleClass = ViolationDataGeneratorService.vehicleClass();
+
+    }
+
+    public LocalDateTime getMoment() {
+        return moment;
+    }
+
+    public void setMoment(LocalDateTime moment) {
+        this.moment = moment;
+    }
+
+    public Integer getVelocity() {
+        return velocity;
+    }
+
+    public void setVelocity(Integer velocity) {
+        this.velocity = velocity;
+    }
+
+    public String getLicensePlate() {
+        return licensePlate;
+    }
+
+    public String getVehicleClass() {
+        return vehicleClass;
+    }
+
+    @Override
+    public String toString(){
+        StringBuilder sb = new StringBuilder();
+        sb.append(moment.format(DTF) + "\n");
+        sb.append(velocity + "\n");
+        sb.append(licensePlate + "\n");
+        sb.append(vehicleClass + "\n");
+
+
+        return sb.toString();
+    }
+}

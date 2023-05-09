@@ -7,7 +7,7 @@ import com.trafficviolationmanager.trafficviolationmanagerapi.model.enums.Vehicl
 import java.time.LocalDateTime;
 
 public record ViolationListData(
-        Long id, LocalDateTime moment, Double velocity, String licensePlate, VehicleClass vehicleClass)
+        Long id, LocalDateTime moment, Integer velocity, String licensePlate, String vehicleClass)
 {
     public ViolationListData(TrafficViolation trafficViolation){
         this(trafficViolation.getId(), trafficViolation.getMoment(), trafficViolation.getVelocity(),

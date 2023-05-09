@@ -13,12 +13,12 @@ public record ViolationRecordData(
         @NotNull
         LocalDateTime moment,
         @NotNull
-        Double velocity,
+        Integer velocity,
         @NotNull
         @Size(max=7)
         String licensePlate,
         @NotNull
-        VehicleClass vehicleClass
+        String vehicleClass
 ) {
 
 }
