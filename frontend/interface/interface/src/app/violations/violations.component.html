@@ -1,0 +1,27 @@
+
+<div class="div-t">
+<table>
+
+        <tr>
+            <th>ID</th>
+            <th>Date/Time</th>
+            <th>Velocity - Km/H</th>
+            <th>License Plate</th>
+            <th>Vehicle Class</th>
+
+            
+
+        </tr>
+
+        <tr *ngFor="let violation of violations">
+            <td>{{violation.id}}</td>
+            <td>{{violation.moment}}</td>
+            <td>{{violation.velocity}}</td>
+            <td>{{violation.licensePlate}}</td>
+            <td>{{violation.vehicleClass}}</td>
+        
+        </tr>
+
+    </table>
+
+</div>

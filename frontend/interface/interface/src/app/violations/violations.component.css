@@ -1,0 +1,33 @@
+
+
+table {
+    border-collapse: collapse;
+    width: 50%;
+    
+
+
+
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+}
+
+.container {
+    position: relative;
+    left: 50%;
+    top: 50%;
+    margin-left: -110px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div-t {
+    position: relative;
+    display: flex;
+    
+}
