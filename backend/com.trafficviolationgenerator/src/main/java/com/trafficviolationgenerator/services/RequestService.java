@@ -27,8 +27,9 @@ public class RequestService {
     public static void generateRequest(String data) throws URISyntaxException {
         HttpClient client = HttpClient.newBuilder().build();
         HttpRequest request = HttpRequest.newBuilder()
-                .uri(URI.create(POST_API_URL))
                 .POST(HttpRequest.BodyPublishers.ofString(data))
+                .header("accept", "application/json")
+                .uri(URI.create(POST_API_URL))
                 .timeout(Duration.ofSeconds(TIMEOUT))
                 .build();
 

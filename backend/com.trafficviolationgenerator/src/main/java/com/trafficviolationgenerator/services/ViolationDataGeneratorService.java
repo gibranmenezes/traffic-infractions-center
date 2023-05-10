@@ -13,7 +13,7 @@ public class ViolationDataGeneratorService {
 
     private static final List<String> classes = Arrays.asList("Moto", "Motoneta", "Carro", "Caminhao", "Onibus");
 
-    private static DateTimeFormatter DTF = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
+    private static DateTimeFormatter DTF = DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss");
 
     public static String licensePlate(){
         return String.join("", RandomStringUtils.randomAlphabetic(3),
@@ -25,8 +25,9 @@ public class ViolationDataGeneratorService {
         return random.nextInt((100 - 80) + 1) + 80;
     }
 
-    public static LocalDateTime moment(){
-        return LocalDateTime.now(ZoneId.of("UTC"));
+    public static String moment(){
+        String moment = LocalDateTime.now().format(DTF);
+        return moment;
     }
 
     public static String vehicleClass(){

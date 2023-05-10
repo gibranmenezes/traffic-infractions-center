@@ -8,13 +8,8 @@ import java.time.format.DateTimeFormatter;
 
 
 public class TrafficViolation {
-
-    private static DateTimeFormatter DTF = DateTimeFormatter.ofPattern("dd/MM/yyyy HH:mm:ss");
-
     private ViolationDataGeneratorService service;
-
-    @JsonFormat(pattern = "dd/MM/yyyy hh:mm:ss a")
-    private LocalDateTime moment;
+    private String moment;
     private Integer velocity;
     private String licensePlate;
     private String vehicleClass;
@@ -28,11 +23,11 @@ public class TrafficViolation {
 
     }
 
-    public LocalDateTime getMoment() {
+    public String getMoment() {
         return moment;
     }
 
-    public void setMoment(LocalDateTime moment) {
+    public void setMoment(String moment) {
         this.moment = moment;
     }
 
@@ -55,7 +50,7 @@ public class TrafficViolation {
     @Override
     public String toString(){
         StringBuilder sb = new StringBuilder();
-        sb.append(moment.format(DTF) + "\n");
+        sb.append(moment + "\n");
         sb.append(velocity + "\n");
         sb.append(licensePlate + "\n");
         sb.append(vehicleClass + "\n");
