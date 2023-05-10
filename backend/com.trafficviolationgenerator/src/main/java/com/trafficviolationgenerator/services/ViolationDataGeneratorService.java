@@ -3,7 +3,6 @@ package com.trafficviolationgenerator.services;
 import org.apache.commons.lang3.RandomStringUtils;
 
 import java.time.LocalDateTime;
-import java.time.ZoneId;
 import java.time.format.DateTimeFormatter;
 import java.util.Arrays;
 import java.util.List;
@@ -34,8 +33,6 @@ public class ViolationDataGeneratorService {
         Random random = new Random();
         int index = random.nextInt(classes.size());
         return classes.get(index).toUpperCase();
-
-
-    }
+   }
 
 }

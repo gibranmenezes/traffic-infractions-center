@@ -1,10 +1,6 @@
 package com.trafficviolationgenerator.model;
 
-import com.fasterxml.jackson.annotation.JsonFormat;
 import com.trafficviolationgenerator.services.ViolationDataGeneratorService;
-
-import java.time.LocalDateTime;
-import java.time.format.DateTimeFormatter;
 
 
 public class TrafficViolation {
