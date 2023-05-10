@@ -24,7 +24,7 @@ public class Application {
 			String resposta = Converter.convertObjectToJson(violation);
 
 			RequestService.generateRequest(resposta);
-			try{Thread.sleep(5000);
+			try{Thread.sleep(3000);
 			} catch (InterruptedException e) {
 				throw new RuntimeException(e);
 			}

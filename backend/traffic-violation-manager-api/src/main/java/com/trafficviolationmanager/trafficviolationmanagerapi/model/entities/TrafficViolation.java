@@ -20,7 +20,7 @@ public class TrafficViolation {
 
     @Id @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
-    private LocalDateTime moment;
+    private String moment;
     private Integer velocity;
 
     private String licensePlate;

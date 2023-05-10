@@ -24,7 +24,7 @@ public class TrafficViolationController {
     private TrafficViolationService service;
 
     @PostMapping
-    public ResponseEntity<TrafficViolation> saveTrafficViolation(@RequestBody @Valid ViolationRecordData violationRecord){
+        public ResponseEntity<TrafficViolation> saveTrafficViolation(@RequestBody @Valid ViolationRecordData violationRecord){
         return ResponseEntity.status(HttpStatus.CREATED).body(service.save(new TrafficViolation(violationRecord)));
     }
 

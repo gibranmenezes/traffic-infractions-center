@@ -11,7 +11,7 @@ import java.time.LocalDateTime;
 
 public record ViolationRecordData(
         @NotNull
-        LocalDateTime moment,
+        String moment,
         @NotNull
         Integer velocity,
         @NotNull
