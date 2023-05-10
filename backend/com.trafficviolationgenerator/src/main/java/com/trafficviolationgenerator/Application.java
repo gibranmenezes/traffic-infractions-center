@@ -18,23 +18,17 @@ public class Application {
 
 		ViolationDataGeneratorService service = new ViolationDataGeneratorService();
 
-		TrafficViolation violation = new TrafficViolation(service);
+		while (true) {
+			TrafficViolation violation = new TrafficViolation(service);
 
-		String resposta = Converter.convertObjectToJson(violation);
+			String resposta = Converter.convertObjectToJson(violation);
 
-		RequestService.generateRequest(resposta);
-
-		System.out.println(resposta);
-
-//		while (true) {
-//			TrafficViolation violation = new TrafficViolation(service);
-//			System.out.println(violation);
-//			try{Thread.sleep(5000);} catch (InterruptedException e) {
-//				throw new RuntimeException(e);
-//			}
-//		}
-
-
+			RequestService.generateRequest(resposta);
+			try{Thread.sleep(5000);
+			} catch (InterruptedException e) {
+				throw new RuntimeException(e);
+			}
+		}
 
 
 
