@@ -1,14 +1,8 @@
 package com.trafficviolationmanager.trafficviolationmanagerapi.model.entities;
 
-import com.trafficviolationmanager.trafficviolationmanagerapi.entities.dtos.ViolationRecordData;
-import com.trafficviolationmanager.trafficviolationmanagerapi.model.enums.VehicleClass;
+import com.trafficviolationmanager.trafficviolationmanagerapi.model.dtos.ViolationRecordData;
 import jakarta.persistence.*;
 import lombok.*;
-
-import java.io.Serial;
-import java.io.Serializable;
-import java.time.LocalDateTime;
-import java.util.UUID;
 
 @Table(name = "violations")
 @Entity

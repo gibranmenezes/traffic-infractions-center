@@ -1,4 +1,4 @@
-package com.trafficviolationmanager.trafficviolationmanagerapi.entities.dtos;
+package com.trafficviolationmanager.trafficviolationmanagerapi.model.dtos;
 
 
 import com.trafficviolationmanager.trafficviolationmanagerapi.model.enums.VehicleClass;
