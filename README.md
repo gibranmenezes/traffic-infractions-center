@@ -43,7 +43,7 @@
 
 * Do the download of the project 
 * Open the backend files in the IntelliJ
-* Run the API
+* Run the API : http://localhost:8080/
 * Run the system generator 
 * Open the frontend file with vscode
 * Open the bash in the project folder
