@@ -1,4 +1,4 @@
-# Traffic Violations Manager
+# Traffic Infractions Center
 
 >Status: Version 1.0 - complete  | Version 2.0 - developing ⚠️
 
