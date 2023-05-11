@@ -1,6 +1,6 @@
 # Traffic Infractions Center
 
->Status: Version 1.0 - complete  | Version 2.0 - developing ⚠️
+>Status: Version 1.0 - developing ⚠️ : Disclaimer: My computer get some problems and the docker container just disappeared and I couldn't send it to te repository.
 
 #
 
