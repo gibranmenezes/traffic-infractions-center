@@ -2,7 +2,13 @@
 
 table {
     border-collapse: collapse;
-    width: 50%;
+    width: 100%;
+    position: relative;
+    padding : 50px;
+    margin: 10px;
+    align-self: center;
+    font-family: 'Roboto', sans-serif;
+    box-shadow:0 5px 0 rgb(148, 156, 163);
     
 
 
@@ -13,6 +19,7 @@ td, th {
     border: 1px solid #dddddd;
     text-align: center;
     padding: 8px;
+    background-color: g;
 }
 
 .container {
@@ -30,4 +37,16 @@ td, th {
     position: relative;
     display: flex;
     
+    
 }
+
+th {
+    background-color: rgb(53, 92, 219);
+    color: white;
+    border:none;
+}
+ td {
+    background-color: rgb(201, 228, 251);
+    color: blue;
+    border: none;
+ }
