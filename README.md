@@ -20,7 +20,7 @@
   ##### The Traffic Violation Generator simulates an Eletronic Traffic Radar and sends the information to the API which process these information and salve in the data base. The Interface requests to the API the Traffic Violations Records and shows in the browser.
 
 #
->### Tecnologies:
+>### Technologies:
 #
 * Backend:
 * * Java
