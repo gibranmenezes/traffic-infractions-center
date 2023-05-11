@@ -4,7 +4,7 @@ import com.trafficviolationmanager.trafficviolationmanagerapi.model.dtos.Violati
 import jakarta.persistence.*;
 import lombok.*;
 
-@Table(name = "violations")
+@Table(name = "records")
 @Entity
 @Data
 @NoArgsConstructor
