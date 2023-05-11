@@ -4,7 +4,7 @@
 
 #
 
-###  It is a REST API projetc which manager informations from a system that simulates an Eletronic Traffic Radar.
+###  It is a REST API projetc which manager information from a system that simulates an Eletronic Traffic Radar.
 #
 
 >#### Project Structure:
@@ -38,9 +38,19 @@
 *  * Docker
 ##
 * Documentation:
-*  * Swagger
+*  * Swagger : [documentation](http://localhost:8080/swagger-ui.html)
 #
 
->### How perform
+>### How perform it:
+
+* Do the download of the project 
+* Open the backend files in the IntelliJ
+* Run the API
+* Run the system generator 
+* Open the frontend file with vscode
+* Open the bash in the project folder
+* Run the command ng serve
+* Open webbrowser in : http://localhost:4200/
+
 
 
