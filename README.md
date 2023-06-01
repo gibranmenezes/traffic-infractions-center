@@ -12,7 +12,7 @@
 
 * Backend:
    * Traffic Violations Manager API : [api](https://github.com/gibranmenezes/traffic-violation-manager/tree/main/backend/traffic-violation-manager-api)
-   * Traffic Violations Generator : [generator](https://github.com/gibranmenezes/traffic-infractions-center/tree/main/backend/com.traffic-radar)
+   * Traffic Radar : [generator](https://github.com/gibranmenezes/traffic-infractions-center/tree/main/backend/com.traffic-radar)
 
 * Frontend:
    * Interface: [interface](https://github.com/gibranmenezes/traffic-violation-manager/tree/main/frontend/interface)
