@@ -1,6 +1,6 @@
 # Traffic Infractions Center
 
->Status: Version 1.0 - developing ⚠️ : Disclaimer: My computer get some problems and the docker container just disappeared and I couldn't send it to te repository.
+>Status: Version 1.0 - developing ⚠️ 
 
 #
 
@@ -12,7 +12,7 @@
 
 * Backend:
    * Traffic Violations Manager API : [api](https://github.com/gibranmenezes/traffic-violation-manager/tree/main/backend/traffic-violation-manager-api)
-   * Traffic Violations Generator : [generator](https://github.com/gibranmenezes/traffic-violation-manager/tree/main/backend/com.trafficviolationgenerator)
+   * Traffic Violations Generator : [generator](https://github.com/gibranmenezes/traffic-infractions-center/tree/main/backend/com.traffic-radar)
 
 * Frontend:
    * Interface: [interface](https://github.com/gibranmenezes/traffic-violation-manager/tree/main/frontend/interface)
@@ -36,19 +36,11 @@
 ##
 
 * Documentation:
-  * Swagger : [documentation](http://localhost:8080/swagger-ui.html)
+  * Swagger : soon
 #
 
 >### How perform it:
 
-* Do the download of the project 
-* Open the backend files in the IntelliJ
-* Run the API : http://localhost:8080/
-* Run the system generator 
-* Open the frontend file with vscode
-* Open the bash in the project folder
-* Run the command ng serve
-* Open webbrowser in : http://localhost:4200/
-
+* in construction
 
 
