@@ -16,12 +16,12 @@ public class RadarController {
 
     @GetMapping(value = "/start")
         public String startRadar() {
-            radar.start();
+            radar.runService();
             return "OK";
         }
     @GetMapping(value = "/stop")
     public String stopRadar() {
-        radar.interrupt();
+        radar.stopService();
         return "OK";
     }
 

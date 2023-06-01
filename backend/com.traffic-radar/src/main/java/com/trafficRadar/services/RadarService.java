@@ -9,22 +9,33 @@ import org.springframework.stereotype.Service;
 @Service
 public class RadarService extends Thread{
 
+    private static Boolean run;
+
     @Autowired
     private ViolationDataGeneratorService dataService;
 
     @Autowired
     private RequestService requestService;
 
-    public void run() {
-        while (true) {
-            var violation = new TrafficViolationData(dataService);
-            String response = Converter.convertObjectToJson(violation);
-            requestService.generateRequest(response);
-            try { Thread.sleep(3000);
-            } catch (InterruptedException e) {
-                throw new RuntimeException(e);
+    public void runService() {
+        run = true;
+        new Thread(() -> {
+            while (run) {
+                try {
+                    var violation = new TrafficViolationData(dataService);
+                    String response = Converter.convertObjectToJson(violation);
+                    requestService.generateRequest(response);
+                    Thread.sleep(3000);
+                } catch (InterruptedException e) {
+                    throw new RuntimeException(e);
+                }
             }
-        }
-
+        }, "radarThread").run();
     }
+
+    public void stopService() {
+        run = false;
+    }
+
+
 }
