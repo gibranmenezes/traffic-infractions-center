@@ -1,6 +1,6 @@
-package com.trafficviolationgenerator.model;
+package com.trafficRadar.model;
 
-import com.trafficviolationgenerator.services.ViolationDataGeneratorService;
+import com.trafficRadar.services.ViolationDataGeneratorService;
 
 
 public class TrafficViolation {
@@ -11,11 +11,11 @@ public class TrafficViolation {
     private String vehicleClass;
 
 
-    public TrafficViolation(ViolationDataGeneratorService service){
-        this.moment = ViolationDataGeneratorService.moment();
-        this.licensePlate = ViolationDataGeneratorService.licensePlate();
-        this.velocity = ViolationDataGeneratorService.velocity();
-        this.vehicleClass = ViolationDataGeneratorService.vehicleClass();
+    public TrafficViolation(TrafficViolationData data){
+        this.moment = data.moment();
+        this.licensePlate = data.licensePlate();
+        this.velocity = data.velocity();
+        this.vehicleClass = data.vehicleClass();
 
     }
 

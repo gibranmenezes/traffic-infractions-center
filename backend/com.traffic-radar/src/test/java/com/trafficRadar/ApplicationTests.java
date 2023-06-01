@@ -1,4 +1,4 @@
-package com.trafficviolationgenerator;
+package com.trafficRadar;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
