@@ -14,7 +14,7 @@ import java.util.List;
 
 @RestController
 @CrossOrigin(origins = "*", maxAge = 3600)
-@RequestMapping("violations")
+    @RequestMapping("violations")
 public class TrafficViolationController {
 
     @Autowired
