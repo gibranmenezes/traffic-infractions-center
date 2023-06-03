@@ -1,9 +1,7 @@
 package com.trafficRadar.controller;
 
 import com.trafficRadar.services.RadarService;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -11,17 +9,14 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/radar")
 public class RadarController {
 
-    @Autowired
-    private RadarService radar;
-
     @GetMapping(value = "/start")
-        public String startRadar() {
-            radar.runService();
-            return "OK";
-        }
+    public String startRadar() {
+        RadarService.setRun(true);
+        return "OK";
+    }
     @GetMapping(value = "/stop")
     public String stopRadar() {
-        radar.stopService();
+        RadarService.setRun(false);
         return "OK";
     }
 
