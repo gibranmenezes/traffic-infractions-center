@@ -4,7 +4,7 @@
 
 #
 
-###  It is a REST API project which manager information from a system that simulates an Eletronic Traffic Radar.
+###  It is a REST API project that manages information from a system that simulates an Eletronic Traffic Radar.
 #
 
 >#### Project Structure:
